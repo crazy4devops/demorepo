@@ -6,10 +6,14 @@ pipeline {
                  echo "Checkout Source Code"
             }
         }
-
         stage("BuildCode"){
             steps {
                  echo "Running Builds"
+            }
+        }
+        stage("CodeAnalysis"){
+            steps {
+                 echo "Running CodeAnalysis"
             }
         }
 
