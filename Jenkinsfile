@@ -43,6 +43,10 @@ pipeline {
             }
         }
         stage("Deploy to PRD"){
+             input {
+                message "Ready to deploy?"
+                ok "Yes"
+            }
             steps {
                  echo "Running PRD Deployment"
             }
