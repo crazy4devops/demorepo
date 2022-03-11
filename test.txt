@@ -1,4 +1,7 @@
-Hi This is a sample file
-asdkfjalsdf
-sadfjklasdf;asdkfjalsdfksdaf
-alsdjflsakdsa
+docker run -itd --name myWordpressApp  \
+-e WORDPRESS_DB_HOST=database-1.cbwnoahljiee.us-east-1.rds.amazonaws.com \
+-e WORDPRESS_DB_USER=admin \
+-e WORDPRESS_DB_PASSWORD=Yokshith#2021 \
+-e WORDPRESS_DB_NAME=myDB \
+-p 8787:80 \
+-d wordpress:latest
